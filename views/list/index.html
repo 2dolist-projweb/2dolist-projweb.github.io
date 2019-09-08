@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>2DO - Listagem de listas</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../../index.html">2DO - LIST</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/views/list/index.html">Minhas listas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Acesso rápido
+                            </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/views/list/create.html">Nova lista</a>
+                        <a class="dropdown-item" href="/views/list/finished.html">Listas já concluídas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/views/info/team.html">Dados do grupo</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Compras no supermercado</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success"><input type="checkbox" checked=true> Açúcar</li>
+                            <li class="list-group-item"><input type="checkbox"> Feijão</li>
+                            <li class="list-group-item"><input type="checkbox"> Leite</li>
+                            <li class="list-group-item"><input type="checkbox"> Carne vermelha</li>
+                            <li class="list-group-item"><input type="checkbox"> Detergente</li>
+                        </ul>
+
+                        <p class="card-text">Eu não posso esquecer nada dessa lista. Pedrinho disse que o leite pode ser desnatado.</p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card bg-danger">
+                    <div class="card-body">
+                        <h5 class="card-title">Checkup no carro</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Pneus</li>
+                            <li class="list-group-item"><input type="checkbox"> Suspensão</li>
+                            <li class="list-group-item"><input type="checkbox"> Óleo do motor</li>
+                            <li class="list-group-item"><input type="checkbox"> Água do radiador</li>
+                            <li class="list-group-item list-group-item-success"><input type="checkbox" checked=true> Documentação</li>
+                        </ul>
+
+                        <p class="card-text">Preciso verificar esses itens antes de irmos viajar</p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card bg-info">
+                    <div class="card-body">
+                        <h5 class="card-title">Entrega do TCC</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Documentação ABNT</li>
+                            <li class="list-group-item"><input type="checkbox"> Casos de uso</li>
+                            <li class="list-group-item"><input type="checkbox"> Requisitos funcionais</li>
+                            <li class="list-group-item"><input type="checkbox"> Requisitos não funcionais</li>
+                            <li class="list-group-item"><input type="checkbox"> Ensaio da apresentação</li>
+                            <li class="list-group-item"><input type="checkbox"> Validar pontos importantes com o grupo</li>
+                        </ul>
+
+                        <p class="card-text">Preciso verificar esses itens todos com o pessoal do grupo</p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Pendências no trabalho</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Enviar e-mail com orçamento</li>
+                            <li class="list-group-item"><input type="checkbox"> Ler documento enviado pelo chefe</li>
+                            <li class="list-group-item list-group-item-success"><input type="checkbox" checked=true> Reunião com o setor de qualidade</li>
+                            <li class="list-group-item"><input type="checkbox"> Pegar feedback do cliente (sac 3392)</li>
+                        </ul>
+
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body bg-warning">
+                        <h5 class="card-title">Faxina em casa</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Lavar a louça</li>
+                            <li class="list-group-item"><input type="checkbox"> Tirar o pó de cima da geladeira</li>
+                            <li class="list-group-item"><input type="checkbox"> Limpar o fogão</li>
+                            <li class="list-group-item"><input type="checkbox"> Tirar o pó dos móveis</li>
+                            <li class="list-group-item"><input type="checkbox"> Varrer os cômodos</li>
+                            <li class="list-group-item"><input type="checkbox"> Passar pano no chão</li>
+                        </ul>
+
+                        <p class="card-text">Tá feia a coisa. Vou precisar da ajuda de todos em casa...</p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologias e coisas para estudar</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><input type="checkbox"> Angular</li>
+                            <li class="list-group-item"><input type="checkbox"> MongoDB</li>
+                            <li class="list-group-item"><input type="checkbox"> Python</li>
+                            <li class="list-group-item"><input type="checkbox"> .NetCore</li>
+                            <li class="list-group-item"><input type="checkbox"> Java com Spring</li>
+                            <li class="list-group-item"><input type="checkbox"> Desing Patterns</li>
+                        </ul>
+
+                        <p class="card-text">Essas são tecnlogias importantes para o cenário atual do mercado de trabalho. Preciso aprender um pouco mais delas.
+                        </p>
+                        <a href="#" class="btn btn-success">Editar</a>
+                        <a href="#" class="btn btn-warning">Concluir</a>
+                        <a href="#" class="btn btn-danger">Remover</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
